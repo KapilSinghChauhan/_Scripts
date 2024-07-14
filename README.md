@@ -41,3 +41,21 @@ katana -list hosts.hosts -passive -pss waybackarchive,commoncrawl,alienvault -kf
 ```
 wpscan --url target.com --disable-tls-checks -e at -e ap -e u --enumerate ap --plugins-detection aggressive --force --api-token TOKEN
 ```
+
+## Tools used
+```
+subfinder
+assetfinder
+sublist3r
+certsh.py
+httpx
+httprobe
+naabu
+nmap
+gowitness
+dirsearch
+katana
+uro
+wpscan
+
+```
