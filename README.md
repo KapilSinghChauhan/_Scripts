@@ -5,6 +5,10 @@
 python3 ~/BugHunting/new_scripts/subenumerator.py
 ```
 
+### Subdomain Takeover
+```
+subzy run --targets unique_subdomains.txt --concurrency 100 --hide_fails --verify_ssl
+```
 
 ### Host enumeration
 
@@ -48,6 +52,7 @@ subfinder
 assetfinder
 sublist3r
 certsh.py
+subzy
 httpx
 httprobe
 naabu
