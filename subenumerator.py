@@ -3,6 +3,16 @@ import threading
 import time
 import os
 
+# Prerequrisits
+'''
+Tools to install
+- assetfinder
+- subfider
+- sublist3r
+- Download certsh.py and add execute permissions
+'''
+
+
 # Commands to run each tool
 commands = {
     "assetfinder": "assetfinder -subs-only {domain} > assetfinder_enumerated.subs",
