@@ -1,6 +1,9 @@
 # Kapil's Methodology
 
-
+### Subdomain enumeration
+```
+python3 ~/BugHunting/new_scripts/subenumerator.py
+```
 
 
 ### Host enumeration
@@ -12,12 +15,15 @@ httpx -l ./all.subs -p 80,443,8080,8443,8000,8008,8888,81,591,2080,2480,7474,598
 
 
 ### Port Scanning
+
+
 ```
 naabu -list all.subs -c 50 -nmap-cli 'nmap -sV sC' -o naabu_scan.txt
 ```
 
 
 ### Wordpress enumeration
+
 ```
 wpscan --url target.com --disable-tls-checks -e at -e ap -e u --enumerate ap --plugins-detection aggressive --force --api-token TOKEN
 ```
