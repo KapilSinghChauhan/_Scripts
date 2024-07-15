@@ -63,6 +63,10 @@ cat urls.txt| gf xss | Gxss -p Kapilxss | dalfox pipe
 ```
 cat urls.txt | urldedupe | gf sqli > sql.urls && sqlmap -m sql.urls --batch --dbs --risk 3 --level 5 --random-agent | tee -a sqli.log
 ```
+### Open redirect Automation
+```
+
+```
 
 ## Tools used
 ```
