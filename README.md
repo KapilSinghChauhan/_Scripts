@@ -47,6 +47,10 @@ google : https://pentest-tools.com/information-gathering/google-hacking
 bing
 duckduckgo
 yahoo
+shodan
+censys
+OSINT
+Github
 ```
 
 ### Wordpress enumeration
@@ -66,6 +70,11 @@ cat urls.txt | urldedupe | gf sqli > sql.urls && sqlmap -m sql.urls --batch --db
 ### Open redirect Automation
 ```
 
+```
+### Manul Testing
+After this much autoomation i think now is time to go for manual testing
+Fire your burp and get started
+```
 ```
 
 ## Tools used
@@ -87,4 +96,17 @@ wpscan
 Gxss
 urldedupe
 dalfox
+```
+
+
+### Burp Setup
+
+#### Extensions
+```
+autoriser
+param miner
+```
+#### Confiurations
+```
+Use match and replace
 ```
