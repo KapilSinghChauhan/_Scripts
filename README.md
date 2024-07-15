@@ -40,6 +40,15 @@ dirsearch -l hosts.hosts -i 200,204,403,443 -x 500,502,429,501,503 -R 5 --random
 katana -list hosts.hosts -passive -pss waybackarchive,commoncrawl,alienvault -kf -jc -fx -ef woff,css,png,svg,jpg,woff2,jpeg,gif,svg -f qurl -c 20 -o katana.txt && cat katana.txt | uro | tee urls.txt
 ```
 
+### Google Dorking
+```
+Hunt for sensitive informatin on all search enginers
+google : https://pentest-tools.com/information-gathering/google-hacking
+bing
+duckduckgo
+yahoo
+```
+
 ### Wordpress enumeration
 
 ```
