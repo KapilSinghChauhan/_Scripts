@@ -43,7 +43,7 @@ katana -list hosts.hosts -passive -pss waybackarchive,commoncrawl,alienvault -kf
 ### Wordpress enumeration
 
 ```
-wpscan --url target.com --disable-tls-checks -e at -e ap -e u --enumerate ap --plugins-detection aggressive --force --api-token TOKEN
+wpscan --url target.com --rua -t 50 --disable-tls-checks -e vp,vt,cb,u,dbe --plugins-detection aggressive --api-token TOKEN
 ```
 
 ### Xss Automation
