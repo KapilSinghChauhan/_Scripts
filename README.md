@@ -82,6 +82,11 @@ After this much autoomation i think now is time to go for manual testing
 Fire your burp and get started
 ```
 ```
+### Additoinal Tools && tips
+```
+1. Use gospider with burp proxy to spider the web
+```
+
 
 ## Tools used
 ```
