@@ -22,7 +22,7 @@ httpx -l ./unique_subdomains.txt -p 80,443,8080,8443,8000,8008,8888,81,591,2080,
 
 
 ```
-naabu -list all.subs -c 50 -nmap-cli 'nmap -sV sC' -o naabu_scan.txt
+naabu -list unique_subdomains.txt -c 50 -nmap-cli 'nmap -sV sC' -o naabu_scan.txt
 ```
 
 ### Screenshots 
