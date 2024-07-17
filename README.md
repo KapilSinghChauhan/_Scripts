@@ -27,7 +27,7 @@ naabu -list unique_subdomains.txt -c 50 -nmap-cli 'nmap -sV sC' -o naabu_scan.tx
 
 ### Screenshots 
 ```
-gowitness file -f hosts/hosts.txt -F --threads 16 
+gowitness file -f hosts.txt -F --threads 16 
 ```
 
 ### Dir/file Discovery
