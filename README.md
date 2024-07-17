@@ -27,12 +27,12 @@ naabu -list all.subs -c 50 -nmap-cli 'nmap -sV sC' -o naabu_scan.txt
 
 ### Screenshots 
 ```
-gowitness file -f hosts/hosts.hosts -F --threads 16 
+gowitness file -f hosts/hosts.txt -F --threads 16 
 ```
 
 ### Dir/file Discovery
 ```
-dirsearch -l hosts.hosts -i 200,204,403,443 -x 500,502,429,501,503 -R 5 --random-agent -t 50 -w ~/BugHunting/new_scripts/wordlist.txt -o dirsearch.txt
+dirsearch -l hosts.txt -i 200,204,403,443 -x 500,502,429,501,503 -R 5 --random-agent -t 50 -w ~/BugHunting/new_scripts/wordlist.txt -o dirsearch.txt
 ```
 
 ### Endpoint/url Enumeration
