@@ -85,6 +85,7 @@ Fire your burp and get started
 ### Additoinal Tools && tips
 ```
 1. Use gospider with burp proxy to spider the web
+2. Subdomainaizer : js secrets,subdomains,cloud 
 ```
 
 
