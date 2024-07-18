@@ -42,7 +42,7 @@ katana -list hosts.txt -passive -pss waybackarchive,commoncrawl,alienvault -kf -
 
 ### js secrets
 ```
-cat urls.txt| grep ".js$" | while read url; do python3 /opt/SecretFinder/SecretFinder.py -i $url -o cli |tee js_secrets.txt; done
+cat urls.txt| grep ".js$" | while read url; do python3 -u /opt/SecretFinder/SecretFinder.py -i $url -o cli | tee -a  js_secrets.txt; done
 ```
 
 ### Google Dorking
