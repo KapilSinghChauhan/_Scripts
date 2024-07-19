@@ -75,7 +75,7 @@ cat urls.txt | urldedupe | gf sqli > sql.urls && sqlmap -m sql.urls --batch --db
 ```
 ### Open redirect Automation
 ```
-
+cat urls.txt| gf redirect | while read url; do  python3 -u /opt/Oralyzer/oralyzer.py -u $url -p /opt/Oralyzer/payloads.txt | tee -a open_redirect.txt; done
 ```
 ### Manul Testing
 After this much autoomation i think now is time to go for manual testing
