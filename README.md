@@ -77,6 +77,12 @@ cat urls.txt | urldedupe | gf sqli > sql.urls && sqlmap -m sql.urls --batch --db
 ```
 cat urls.txt| gf redirect | while read url; do  python3 -u /opt/Oralyzer/oralyzer.py -u $url -p /opt/Oralyzer/payloads.txt | tee -a open_redirect.txt; done
 ```
+
+### Cross-Origin resource sharing (CORS)
+```
+cat hosts.txt | while read url ; do python3 -u /opt/Corsy/corsy.py -u $url -o cli -t 10 | tee -a cors_misconf.txt;done
+```
+
 ### Manul Testing
 After this much autoomation i think now is time to go for manual testing
 Fire your burp and get started
