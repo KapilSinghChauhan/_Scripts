@@ -1,5 +1,16 @@
 # Kapil's Methodology
 
+### Bug Bounty Programs Dorks
+```
+"responsible disclosure program"
+"vulnerability disclosure program"
+"vulnerability program rewards"
+"bugbounty reward program"
+inurl: vulnerability disclosure
+inurl: responsible disclosure
+```
+
+
 ### Subdomain enumeration
 ```
 python3 ~/BugHunting/new_scripts/subenumerator.py
