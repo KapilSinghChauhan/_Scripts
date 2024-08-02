@@ -96,7 +96,7 @@ cat hosts.txt | while read url ; do python3 -u /opt/Corsy/corsy.py -u $url -o cl
 
 ### Broken link Hijacking 
 ```
-
+cat hosts.hosts| while read url ; do python3 -u /opt/BrokenLinkHijacker/BLH.py $url >> blh_reports.txt ; done
 ```
 
 ### Manul Testing
