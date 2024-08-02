@@ -7,7 +7,7 @@
 "vulnerability program rewards"
 "bugbounty reward program"
 inurl: vulnerability disclosure
-inurl: responsible disclosure
+inurl: responsible disclosurego install github.com/utkusen/socialhunter@latest
 ```
 
 
@@ -96,7 +96,10 @@ cat hosts.txt | while read url ; do python3 -u /opt/Corsy/corsy.py -u $url -o cl
 
 ### Broken link Hijacking 
 ```
-cat hosts.hosts| while read url ; do python3 -u /opt/BrokenLinkHijacker/BLH.py $url >> blh_reports.txt ; done
+cat hosts.txt| while read url ; do python3 -u /opt/BrokenLinkHijacker/BLH.py $url >> blh_reports.txt ; done
+```
+```
+socialhunter -f hosts.txt
 ```
 
 ### Manul Testing
