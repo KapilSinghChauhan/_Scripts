@@ -94,6 +94,11 @@ cat urls.txt| gf redirect | while read url; do  python3 -u /opt/Oralyzer/oralyze
 cat hosts.txt | while read url ; do python3 -u /opt/Corsy/corsy.py -u $url -o cli -t 10 | tee -a cors_misconf.txt;done
 ```
 
+### Broken link Hijacking 
+```
+
+```
+
 ### Manul Testing
 After this much autoomation i think now is time to go for manual testing
 Fire your burp and get started
