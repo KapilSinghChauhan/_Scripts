@@ -1,6 +1,6 @@
 # Kapil's Methodology
 
-### Bug Bounty Programs Dorks
+### Bug Bounty Programs Dorks-title
 ```
 "responsible disclosure program"
 "vulnerability disclosure program"
@@ -25,7 +25,7 @@ subzy run --targets unique_subdomains.txt --concurrency 100 --hide_fails --verif
 
 
 ```
-httpx -l ./unique_subdomains.txt -p 80,443,4444,8080,8443,8000,8008,8888,81,591,2080,2480,7474,5985,5986,1311,4711,5800,8081,9090,8181,8880,3000,3001,5000,5001,7000,7001,9091,9080,9443,10443,18080,28080,38080,48080 -t 200 -o httpx_status.hosts -status-code | awk '{print $1}' > httpx.hosts && cat ./unique_subdomains.txt| httprobe -c 40 | tee httprobe.hosts && cat httpx.hosts httprobe.hosts | sort -u | uniq | tee hosts.txt
+httpx -l ./unique_subdomains.txt -p 80,443,4444,8080,8443,8000,8008,8888,81,591,2080,2480,7474,5985,5986,1311,4711,5800,8081,9090,8181,8880,3000,3001,5000,5001,7000,7001,9091,9080,9443,10443,18080,28080,38080,48080 -t 200 -o httpx_status.hosts -status-code -title | awk '{print $1}' > httpx.hosts && cat ./unique_subdomains.txt| httprobe -c 40 | tee httprobe.hosts && cat httpx.hosts httprobe.hosts | sort -u | uniq | tee hosts.txt
 ```
 
 
